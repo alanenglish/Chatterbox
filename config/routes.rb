@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   # custom logout action
   delete '/logout' => 'sessions#destroy'
+  # create a new message
+  post '/message' => 'messages#create'
 end
