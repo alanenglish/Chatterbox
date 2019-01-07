@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
   # create a new message
   post '/message' => 'messages#create'
+
+  mount ActionCable.server, at: '/cable'
 end
